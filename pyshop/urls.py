@@ -18,8 +18,9 @@ from django.urls import path, include
 from django.urls import include
 
 urlpatterns = [
+    path('', include('products.urls')),
     path('admin/', admin.site.urls),
     path('products/', include('products.urls'))
 ]
 
-#This is the parent URL module
+# This is the parent URL module

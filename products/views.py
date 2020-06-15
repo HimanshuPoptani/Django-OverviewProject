@@ -9,6 +9,7 @@ def function(request):
                   {'products': products})
 
 
+
 def new(request):
     return HttpResponse('New items')
 
