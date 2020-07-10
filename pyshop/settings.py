@@ -25,7 +25,7 @@ SECRET_KEY = 'kx7p!n#s@3hv7e&#d4-9x+up9@o+ztsb-g)djdufo6t_g4djjz'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'products.apps.ProductsConfig'
+    'products.apps.ProductsConfig',
+    #'mod_wsgi.server'
 ]
 
 MIDDLEWARE = [
